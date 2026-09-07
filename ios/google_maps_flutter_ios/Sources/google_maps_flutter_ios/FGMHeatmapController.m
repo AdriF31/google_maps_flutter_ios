@@ -5,7 +5,7 @@
 #import "FGMHeatmapController.h"
 #import "FGMHeatmapController_Test.h"
 
-@import GoogleMapsUtils;
+@import GoogleMapsUtilsObjC;
 
 #import "FGMConversionUtils.h"
 

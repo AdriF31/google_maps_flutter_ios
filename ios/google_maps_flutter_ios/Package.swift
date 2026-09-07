@@ -40,7 +40,11 @@ let package = Package(
                 .process("Resources")
             ],
             cSettings: [
-                .headerSearchPath("include/google_maps_flutter_ios")
+                .headerSearchPath("include/google_maps_flutter_ios"),
+                // Signals GoogleMapsUtilsTrampoline.h to import the ObjC
+                // module (GoogleMapsUtilsObjC) instead of the CocoaPods
+                // umbrella module (GoogleMapsUtils).
+                .define("GOOGLE_MAPS_FLUTTER_SPM")
             ]
         )
     ]
